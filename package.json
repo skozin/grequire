@@ -1,0 +1,38 @@
+{
+  "name": "grequire",
+  "version": "1.0.0",
+  "description": "Synchronous require of multiple modules that match a given glob pattern",
+  "author": "Sam Kozin <sam.kozin@gmail.com>",
+  "scripts": {
+    "prepublish": "babel ./es6 --out-dir .",
+    "test": "npm run-script prepublish && mocha -C ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skozin/grequire.git"
+  },
+  "keywords": [
+    "require",
+    "glob",
+    "pattern",
+    "directory",
+    "synchronous"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skozin/grequire/issues"
+  },
+  "homepage": "https://github.com/skozin/grequire",
+  "dependencies": {
+    "glob": "^5.0.3"
+  },
+  "devDependencies": {
+    "babel": "^4.7.9",
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1"
+  },
+  "files": [
+    "es6/index.js",
+    "index.js"
+  ]
+}
